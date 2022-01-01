@@ -3,5 +3,7 @@ from . import views
 
 urlpatterns = [
     path('',views.com_list),
-    path('<int:id>',views.dom_list),
+    path('all',views.dom_list),
+    path('<int:id>',views.commune_detail),
+    
 ]
